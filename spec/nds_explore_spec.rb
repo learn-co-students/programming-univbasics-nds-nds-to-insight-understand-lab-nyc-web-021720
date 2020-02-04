@@ -15,7 +15,7 @@ describe 'When using "pp" to display complex data structures,' do
 
     # Code to analyze to get a passing result
     pretty_print_nds(directors_database)
-    expect(!!$pp_called_flag).to eq(true), "Make sure you call `pp` in this pretty_print_nds"
+    expect($pp_called_flag).to eq(true), "Make sure you call `pp` in this pretty_print_nds"
     # end
 
     # Used to verify the test, safe to ignore from here to end of method
